@@ -1,0 +1,59 @@
+[build]
+beforeDevCommand = "cd greed_ui; pnpm dev"
+beforeBuildCommand = "cd greed_ui; pnpm build"
+devPath = "http://localhost:5173"
+distDir = "../greed_ui/build"
+withGlobalTauri = true
+
+[package]
+productName = "Greed"
+version = "0.1.0"
+
+[tauri.allowlist]
+all = false
+
+[tauri.bundle]
+active = true
+category = "DeveloperTool"
+copyright = ""
+externalBin = [ ]
+icon = [
+  "icons/32x32.png",
+  "icons/128x128.png",
+  "icons/128x128@2x.png",
+  "icons/icon.icns",
+  "icons/icon.ico"
+]
+identifier = "com.tauri.dev"
+longDescription = ""
+resources = [ ]
+shortDescription = ""
+targets = "all"
+
+[tauri.bundle.deb]
+depends = [ ]
+
+[tauri.bundle.macOS]
+exceptionDomain = ""
+frameworks = [ ]
+
+[tauri.bundle.windows]
+digestAlgorithm = "sha256"
+timestampUrl = ""
+
+[tauri.security]
+
+[tauri.updater]
+active = false
+
+[[tauri.windows]]
+center = true
+fullscreen = false
+height = 720
+width = 1280
+minHeight = 720
+minWidth = 1280
+resizable = true
+title = "Greed"
+fileDropEnabled = false
+decorations = false
