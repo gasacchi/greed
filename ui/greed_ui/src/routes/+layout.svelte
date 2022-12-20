@@ -5,20 +5,14 @@
   import "../app.css";
 </script>
 
-<div id="app">
+<div class="bg-base h-screen w-scree">
   <TitleBar />
 
   <TabBar />
 
-  <main>
+  <main class="absolute top-9 left-9 h-[91.8%] bg-red w-[97.3%]">
     <slot />
   </main>
 
   <StatusBar />
 </div>
-
-<style lang="postcss">
-  div#app {
-    @apply bg-base h-screen w-screen;
-  }
-</style>
