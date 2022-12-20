@@ -8,6 +8,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		alias: {
+			'@icons': 'src/lib/icons',
+			'@app': 'src/lib/app'
+		},
 		adapter: adapter()
 	}
 };
