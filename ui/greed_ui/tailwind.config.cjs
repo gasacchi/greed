@@ -23,7 +23,7 @@ module.exports = {
       subtext0: "#a6adc8",
       overlay2: "#9399b2",
       overlay1: "#7f849c",
-      oerlay0: "#6c7086",
+      overlay0: "#6c7086",
       surface2: "#585b70",
       surface1: "#45475a",
       surface0: "#313244",
