@@ -1,18 +1,13 @@
 <script lang="ts">
-  import StatusBar from "$lib/app/StatusBar.svelte";
-  import TabBar from "$lib/app/TabBar.svelte";
-  import TitleBar from "$lib/app/TitleBar.svelte";
+  import CommandButton from "$lib/CommandButton.svelte";
+  import Taskbar from "$lib/Taskbar.svelte";
   import "../app.css";
 </script>
 
-<div class="bg-base h-screen w-scree">
-  <TitleBar />
-
-  <TabBar />
-
-  <main class="absolute top-9 left-9 h-[91.8%] bg-red w-[97.3%]">
+<div class="bg-base h-screen w-screen select-none">
+  <main class="h-[96%] bg-surface0 w-full">
     <slot />
   </main>
 
-  <StatusBar />
+  <CommandButton />
 </div>
